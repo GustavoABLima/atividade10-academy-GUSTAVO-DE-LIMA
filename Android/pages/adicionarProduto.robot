@@ -15,11 +15,7 @@ ${LOTE}            id=${PREFIXO}/txt_lote
 ${SALVAR}          id=${PREFIXO}/btn_gravar_assunto
 
 
-@{produtos}    
-...    COD = 666    
-...    DES = The Number Of The Beast    
-...    QTD = 10    
-...    VLR = 30.00
+@{produtos}     COD = 666        DES = The Number Of The Beast       QTD = 10        VLR = 30.00
 
 *** Keywords ***
 
@@ -47,9 +43,9 @@ Quando o usuario informa o template do novo produto
     FOR    ${produto}    IN    @{produtos}    
 
         Wait Until Element Is Visible    ${CODIGO}
-        Input Text                       ${CODIGO}           ${produto}
-        Input Text                       ${DESCRICAO}        ${produto}
-        Input Text                       ${QUANTIDADE}       ${produto}
-        Input Text                       ${VALOR}            ${produto}
+        Input Text                       ${CODIGO}           ${produto[0]}
+        Input Text                       ${DESCRICAO}        ${produto[1]}
+        Input Text                       ${QUANTIDADE}       ${produto[2]}
+        Input Text                       ${VALOR}            ${produto[3]}
 
     END
