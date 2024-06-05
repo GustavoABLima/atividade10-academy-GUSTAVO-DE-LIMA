@@ -4,6 +4,7 @@ Resource    ../../base.robot
 Library     AppiumLibrary
 
 *** Variables ***
+
 ${NOVO}            id=${PREFIXO}/Button1
 ${CODIGO}          id=${PREFIXO}/txt_codigo
 ${DESCRICAO}       id=${PREFIXO}/txt_descricao

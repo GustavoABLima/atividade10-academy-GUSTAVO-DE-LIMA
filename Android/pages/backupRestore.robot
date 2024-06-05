@@ -4,6 +4,7 @@ Resource    ../../base.robot
 Library     AppiumLibrary
 
 *** Variables ***
+
 ${MENU}            id=${PREFIXO}/Button3
 ${BACKUP}          id=${PREFIXO}/btn_backup
 ${GERAR_BACKUP}    id=${PREFIXO}/btn_gerar
